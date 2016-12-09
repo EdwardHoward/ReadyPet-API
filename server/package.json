@@ -1,0 +1,16 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Api for readypet",
+  "main": "server.js",
+  "dependencies":{
+    "express": "4.13.4",
+    "mongoose": "4.6.3",
+    "body-parser": "1.15.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Edward Howard <edwardhoward11@gmail.com>",
+  "license": "ISC"
+}
