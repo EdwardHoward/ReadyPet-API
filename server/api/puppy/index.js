@@ -7,6 +7,7 @@ var router = express.Router();
 
 router.get('/', controller.find);
 router.get('/:id', controller.findById);
+router.get('/:id/similar', controller.findSimilar);
 router.post('/create', controller.create);
 router.delete('/:id', controller.delete);
 router.put('/:id', controller.update);
