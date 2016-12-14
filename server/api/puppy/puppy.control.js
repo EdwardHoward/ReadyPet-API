@@ -33,10 +33,7 @@ module.exports = {
     },
     delete: function(req, res){
         Puppy.remove({_id: req.params.id}, function(err){
-            Puppy.find({}, function(err, puppies){
-                res.status(200).json(puppies);
-            })
-            
+            res.status(200).json({message: 'Puppy Deleted'});
         });
     },
     update: function(req, res){
